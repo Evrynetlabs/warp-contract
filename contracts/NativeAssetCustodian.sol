@@ -1,5 +1,6 @@
 pragma solidity ^0.5.0;
 
+
 /// @author Evrynet Team
 /// @title The storage which holds a pre-minted native asset
 contract NativeAssetCustodian {

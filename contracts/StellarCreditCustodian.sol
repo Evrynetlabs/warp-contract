@@ -3,6 +3,7 @@ pragma solidity ^0.5.0;
 import "./WhitelistAssets.sol";
 import "./ICreditCustodian.sol";
 
+
 contract StellarCreditCustodian is WhitelistAssets, ICreditCustodian {
     struct MigrateProposal {
         // mapping of signer to sign state
@@ -14,10 +15,7 @@ contract StellarCreditCustodian is WhitelistAssets, ICreditCustodian {
     // mapping of a new contract to a mapping of credit contract to the migration proposal
     mapping(address => MigrateProposal) private proposals;
 
-    constructor(address _credit, uint16 _threshold)
-        public
-        WhitelistAssets(_credit)
-    {
+    constructor(address _credit, uint16 _threshold) public WhitelistAssets(_credit) {
         threshold = _threshold;
     }
 
@@ -36,11 +34,7 @@ contract StellarCreditCustodian is WhitelistAssets, ICreditCustodian {
         proposal.count = proposal.count + 1;
         if (proposal.count >= threshold) {
             WhitelistAssets whitelist = WhitelistAssets(_to);
-            for (
-                uint256 creditID = linklist[0];
-                creditID != 0;
-                creditID = linklist[creditID]
-            ) {
+            for (uint256 creditID = linklist[0]; creditID != 0; creditID = linklist[creditID]) {
                 credit.setMinter(creditID, _to);
                 whitelist.add(creditID);
             }
@@ -51,10 +45,7 @@ contract StellarCreditCustodian is WhitelistAssets, ICreditCustodian {
     /// @notice Lock user token the same amount of token will be unlocked on the stellar
     /// @param _typeID the ID of credit to be locked
     /// @param _value amount of tokens to be locked
-    function lock(uint256 _typeID, uint256 _value)
-        external
-        onlyWhitelistedAssets(_typeID)
-    {
+    function lock(uint256 _typeID, uint256 _value) external onlyWhitelistedAssets(_typeID) {
         credit.burnFungible(_typeID, msg.sender, _value);
         emit Lock(address(this), msg.sender, _typeID, _value, bytes(""));
     }
@@ -63,10 +54,7 @@ contract StellarCreditCustodian is WhitelistAssets, ICreditCustodian {
     /// will be locked in the stellar lock up account.
     /// @param _typeID the ID of credit to be transferred
     /// @param _value amount of tokens to be transferred
-    function unlock(uint256 _typeID, uint256 _value)
-        external
-        onlyWhitelistedAssets(_typeID)
-    {
+    function unlock(uint256 _typeID, uint256 _value) external onlyWhitelistedAssets(_typeID) {
         address[] memory tos = new address[](1);
         uint256[] memory values = new uint256[](1);
         tos[0] = msg.sender;

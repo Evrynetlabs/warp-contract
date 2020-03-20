@@ -7,6 +7,7 @@ import "../utils/PayableThrowProxy.sol";
 import "truffle/Assert.sol";
 import "@Evrynetlabs/credit-contract/contracts/EER2B.sol";
 
+
 contract TestLockEvrynetCredit {
     using Convert for address;
 
@@ -71,5 +72,4 @@ contract TestLockEvrynetCredit {
 
         Assert.isFalse(success, "should throw error locking credit with prohibited credit");
     }
-
 }

@@ -4,6 +4,7 @@ import "./WhitelistAssets.sol";
 import "@Evrynetlabs/credit-contract/contracts/IEER2TokenReceiver.sol";
 import "./ICreditCustodian.sol";
 
+
 contract EvrynetCreditCustodian is WhitelistAssets, IEER2TokenReceiver, ICreditCustodian {
     // onReceive function signatures
     bytes4 internal constant EER2_RECEIVED_VALUE = 0x09a23c29;

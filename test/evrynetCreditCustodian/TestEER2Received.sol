@@ -5,6 +5,7 @@ import "truffle/Assert.sol";
 import "@Evrynetlabs/credit-contract/contracts/EER2B.sol";
 import "../../contracts/EvrynetCreditCustodian.sol";
 
+
 contract TestEER2Received {
     bytes4 internal constant EER2_RECEIVED_VALUE = 0x09a23c29;
     bytes4 internal constant EER2_BATCH_RECEIVED_VALUE = 0xbaf5f228;
@@ -53,5 +54,4 @@ contract TestEER2Received {
             "should value equal to EER2_BATCH_RECEIVED_VALUE"
         );
     }
-
 }

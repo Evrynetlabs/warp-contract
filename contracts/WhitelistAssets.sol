@@ -59,10 +59,7 @@ contract WhitelistAssets {
     /// @param _prevTypeID the prior credit ID in the linklist
     function remove(uint256 _typeID, uint256 _prevTypeID) external {
         require(_typeID != 0, "WhitelistAssets: the credit id cannot be zero");
-        require(
-            linklist[_prevTypeID] == _typeID,
-            "WhitelistAssets: invalid remove argument"
-        );
+        require(linklist[_prevTypeID] == _typeID, "WhitelistAssets: invalid remove argument");
         assets[_typeID] = false;
         linklist[_prevTypeID] = linklist[_typeID];
         linklist[_typeID] = 0;

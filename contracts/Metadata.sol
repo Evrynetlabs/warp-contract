@@ -12,9 +12,7 @@ contract Metadata is IMetadata, IERC165 {
     bytes4 private constant INTERFACE_SIGNATURE_ERC165 = 0x01ffc9a7;
     bytes4 private constant INTERFACE_SIGNATURE_METADATA = 0x2ad5032c;
 
-    constructor(string memory name, string memory issuer, uint8 decimals)
-        public
-    {
+    constructor(string memory name, string memory issuer, uint8 decimals) public {
         _name = name;
         _issuer = issuer;
         _decimals = decimals;
@@ -32,11 +30,7 @@ contract Metadata is IMetadata, IERC165 {
         return _decimals;
     }
 
-    function supportsInterface(bytes4 _interfaceId)
-        external
-        view
-        returns (bool)
-    {
+    function supportsInterface(bytes4 _interfaceId) external view returns (bool) {
         if (
             _interfaceId == INTERFACE_SIGNATURE_ERC165 ||
             _interfaceId == INTERFACE_SIGNATURE_METADATA
