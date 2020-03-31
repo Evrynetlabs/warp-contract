@@ -1,0 +1,54 @@
+{
+  "name": "@Evrynetlabs/warp-contract",
+  "version": "2.0.0",
+  "description": "smart contracts using in the Warp protocol",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@Evrynetlabs/credit-contract": "git+ssh://git@github.com:/Evrynetlabs/credit-contract",
+    "@truffle/contract": "^4.1.12"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.19.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.41",
+    "solhint": "^2.3.0",
+    "solhint-plugin-prettier": "^0.0.4",
+    "truffle-assertions": "^0.9.1",
+    "bignumber.js": "^9.0.0",
+    "openzeppelin-solidity": "^2.3.0",
+    "web3": "^1.2.6"
+  },
+  "scripts": {
+    "build": "truffle build",
+    "test": "truffle test",
+    "solhint": "./node_modules/.bin/solhint -f table 'contracts/**/*.sol' && ./node_modules/.bin/solhint -f table 'test/**/*.sol'",
+    "prettier:solidity": "./node_modules/.bin/prettier --write 'contracts/**/*.sol' && ./node_modules/.bin/prettier --write 'test/**/*.sol' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evrynetlabs/warp.git"
+  },
+  "keywords": [
+    "evrynet",
+    "stellar",
+    "bridge",
+    "warp",
+    "asset",
+    "transfer",
+    "move"
+  ],
+  "author": "EvryNet Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Evrynetlabs/warp/issues"
+  },
+  "homepage": "https://github.com/Evrynetlabs/warp#readme"
+}
