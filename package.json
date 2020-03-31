@@ -1,7 +1,7 @@
 {
-  "name": "@Evrynetlabs/warp",
+  "name": "@Evrynetlabs/warp-contract",
   "version": "2.0.0",
-  "description": "warp protocol",
+  "description": "smart contracts using in the Warp protocol",
   "directories": {
     "test": "test"
   },
