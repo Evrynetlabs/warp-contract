@@ -1899,7 +1899,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2020-03-20T07:56:39.978Z",
+  "updatedAt": "2020-04-08T07:30:09.380Z",
   "devdoc": {
     "methods": {
       "burnFungible(uint256,address,uint256)": {

@@ -955,7 +955,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2020-03-20T07:56:39.979Z",
+  "updatedAt": "2020-04-08T07:30:09.381Z",
   "devdoc": {
     "methods": {
       "onEER2BatchReceived(address,address,uint256[],uint256[],bytes)": {

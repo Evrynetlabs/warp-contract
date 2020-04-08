@@ -26175,7 +26175,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2020-03-20T07:56:39.947Z",
+  "updatedAt": "2020-04-08T07:30:09.358Z",
   "devdoc": {
     "methods": {
       "balanceOf(address,uint256)": {
