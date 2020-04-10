@@ -2,7 +2,7 @@ pragma solidity ^0.5.0;
 
 import "./Metadata.sol";
 import "./lib/Convert.sol";
-import "@Evrynetlabs/credit-contract/contracts/EER2B.sol";
+import "@evrynetlabs/credit-contract/contracts/EER2B.sol";
 import "@openzeppelin/contracts/introspection/IERC165.sol";
 
 

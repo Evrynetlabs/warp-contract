@@ -2,12 +2,6 @@
 # yarn lockfile v1
 
 
-"@Evrynetlabs/credit-contract@git+ssh://git@github.com:/Evrynetlabs/credit-contract":
-  version "1.0.0"
-  resolved "git+ssh://git@github.com:/Evrynetlabs/credit-contract#a12215518ea1e8d8af5c4b77be49ee31bc1974a4"
-  dependencies:
-    "@openzeppelin/contracts" "2.3.0"
-
 "@babel/code-frame@^7.0.0":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -23,6 +17,13 @@
     chalk "^2.0.0"
     esutils "^2.0.2"
     js-tokens "^4.0.0"
+
+"@evrynetlabs/credit-contract@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@evrynetlabs/credit-contract/-/credit-contract-1.1.2.tgz#eff8f2bbedf77d35bfe717d86ce12f7abdd9e788"
+  integrity sha512-oI4GwuZaqqtEI616eKCFOfcUiFIHvzpZrQh4NZ3Ed2x+WJQ8XCnvEU34VjVVj/5Knm006olSOPmFNFaklkAEKQ==
+  dependencies:
+    "@openzeppelin/contracts" "2.3.0"
 
 "@openzeppelin/contracts@2.3.0":
   version "2.3.0"

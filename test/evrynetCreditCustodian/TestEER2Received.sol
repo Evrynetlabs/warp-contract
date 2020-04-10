@@ -2,7 +2,7 @@ pragma solidity ^0.5.0;
 
 import "../utils/ThrowProxy.sol";
 import "truffle/Assert.sol";
-import "@Evrynetlabs/credit-contract/contracts/EER2B.sol";
+import "@evrynetlabs/credit-contract/contracts/EER2B.sol";
 import "../../contracts/EvrynetCreditCustodian.sol";
 
 

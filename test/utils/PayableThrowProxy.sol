@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-import "@Evrynetlabs/credit-contract/contracts/IEER2TokenReceiver.sol";
+import "@evrynetlabs/credit-contract/contracts/IEER2TokenReceiver.sol";
 import "./ThrowProxy.sol";
 
 

@@ -5,7 +5,7 @@ import "../../contracts/Metadata.sol";
 import "../../contracts/lib/Convert.sol";
 import "./../utils/ThrowProxy.sol";
 import "truffle/Assert.sol";
-import "@Evrynetlabs/credit-contract/contracts/EER2B.sol";
+import "@evrynetlabs/credit-contract/contracts/EER2B.sol";
 
 
 contract TestWhitelistAssetsAddAsset {

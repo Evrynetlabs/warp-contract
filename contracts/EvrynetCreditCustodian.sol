@@ -1,8 +1,8 @@
 pragma solidity ^0.5.0;
 
 import "./WhitelistAssets.sol";
-import "@Evrynetlabs/credit-contract/contracts/IEER2TokenReceiver.sol";
 import "./ICreditCustodian.sol";
+import "@evrynetlabs/credit-contract/contracts/IEER2TokenReceiver.sol";
 
 
 contract EvrynetCreditCustodian is WhitelistAssets, IEER2TokenReceiver, ICreditCustodian {
