@@ -45,8 +45,8 @@
     "transfer",
     "move"
   ],
-  "author": "EvryNet Team",
-  "license": "MIT",
+  "author": "Evrynet Team",
+  "license": "OSL-3.0",
   "bugs": {
     "url": "https://github.com/Evrynetlabs/warp/issues"
   },
