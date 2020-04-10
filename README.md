@@ -40,7 +40,7 @@ $ yarn run build
 ```
 
 ## Versioning
-We use a [SemVer](https://semver.org/) for versioning. Please see the [release](https://github.com/Evrynetlabs/credit-contract/releases).
+We use a [SemVer](https://semver.org/) for versioning. Please see the [release](https://github.com/Evrynetlabs/warp-contract/releases).
 
 ## Test
 ```console
