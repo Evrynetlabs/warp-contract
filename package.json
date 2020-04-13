@@ -1,6 +1,6 @@
 {
   "name": "@evrynetlabs/warp-contract",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "smart contracts using in the Warp protocol",
   "directories": {
     "test": "test"
