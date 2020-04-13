@@ -18,10 +18,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@evrynetlabs/credit-contract@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@evrynetlabs/credit-contract/-/credit-contract-1.1.2.tgz#eff8f2bbedf77d35bfe717d86ce12f7abdd9e788"
-  integrity sha512-oI4GwuZaqqtEI616eKCFOfcUiFIHvzpZrQh4NZ3Ed2x+WJQ8XCnvEU34VjVVj/5Knm006olSOPmFNFaklkAEKQ==
+"@evrynetlabs/credit-contract@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@evrynetlabs/credit-contract/-/credit-contract-1.1.3.tgz#91d95cf44633f24a89c6ff2b3f8985bb41843f39"
+  integrity sha512-YjqN4uvr/CQiX1JHLCemjjxgEIvwVfxNACebx6YjgNikNqgrLzJv+2h/IwaLMcD7ta5m6TkpHQ+sIFjBJxpsVQ==
   dependencies:
     "@openzeppelin/contracts" "2.3.0"
 
