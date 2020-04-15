@@ -64,6 +64,26 @@ pipeline {
                 '''
             }
         }
+
+        stage('Publish') {
+            when {
+                branch 'master'
+            }
+            steps {
+                withCredentials([
+                    string(credentialsId: 'evrynetlabs-npm-token', variable: 'NPM_TOKEN'),
+                    string(credentialsId: 'evrynetlabs-npm-email', variable: 'NPM_EMAIL')
+                    ]) {
+                    sh '''
+                        echo "Publish to npm"
+                        echo _auth=$NPM_TOKEN >> .npmrc
+                        echo email=$NPM_EMAIL >> .npmrc
+                        echo always-auth=true >> .npmrc
+                        npm publish
+                    '''
+                }
+            }
+        }
     }
     post {
         failure {
