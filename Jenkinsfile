@@ -71,15 +71,12 @@ pipeline {
             }
             steps {
                 withCredentials([
-                    string(credentialsId: 'evrynetlabs-npm-token', variable: 'NPM_TOKEN'),
+                    usernamePassword(credentialsId: 'evry-npm-account', usernameVariable: 'NPM_USER', passwordVariable: 'NPM_PASS'),
                     string(credentialsId: 'evrynetlabs-npm-email', variable: 'NPM_EMAIL')
                     ]) {
                     sh '''
                         echo "Publish to npm"
-                        echo _auth=$NPM_TOKEN >> .npmrc
-                        echo email=$NPM_EMAIL >> .npmrc
-                        echo always-auth=true >> .npmrc
-                        npm publish
+                        docker run --rm ${dockerImage} sh -c "npm-cli-login -u $NPM_USER -p $NPM_PASS -e $NPM_EMAIL && npm publish"
                     '''
                 }
             }
