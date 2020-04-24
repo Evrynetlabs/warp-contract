@@ -1,12 +1,12 @@
 {
-  "name": "@Evrynetlabs/warp-contract",
-  "version": "2.0.0",
+  "name": "@evrynetlabs/warp-contract",
+  "version": "2.0.2",
   "description": "smart contracts using in the Warp protocol",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "@Evrynetlabs/credit-contract": "git+ssh://git@github.com:/Evrynetlabs/credit-contract",
+    "@evrynetlabs/credit-contract": "^1.1.3",
     "@truffle/contract": "^4.1.12"
   },
   "devDependencies": {
@@ -45,10 +45,17 @@
     "transfer",
     "move"
   ],
-  "author": "EvryNet Team",
-  "license": "MIT",
+  "author": "Evrynet Team",
+  "license": "OSL-3.0",
   "bugs": {
     "url": "https://github.com/Evrynetlabs/warp/issues"
   },
-  "homepage": "https://github.com/Evrynetlabs/warp#readme"
+  "files": [
+    "build/**/*",
+    "contracts/**/*"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

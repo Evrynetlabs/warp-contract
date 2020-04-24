@@ -1,4 +1,4 @@
-const Credit = artifacts.require('@Evrynetlabs/credit-contract/contracts/EER2B.sol')
+const Credit = artifacts.require('@evrynetlabs/credit-contract/contracts/EER2B.sol')
 const StellarCreditCustodian = artifacts.require('StellarCreditCustodian')
 const Metadata = artifacts.require('Metadata')
 const truffleAssert = require('truffle-assertions')

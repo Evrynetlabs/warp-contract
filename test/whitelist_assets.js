@@ -1,6 +1,6 @@
 const WhitelistAssets = artifacts.require('StellarCreditCustodian')
 const Metadata = artifacts.require('Metadata')
-const Credit = artifacts.require('@Evrynetlabs/credit-contract/contracts/EER2B.sol')
+const Credit = artifacts.require('@evrynetlabs/credit-contract/contracts/EER2B.sol')
 const BigNumber = require('bignumber.js')
 const Contract = require('@truffle/contract')
 const ERC165MockData = require('@openzeppelin/contracts/build/ERC165Mock.json')
